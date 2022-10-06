@@ -1,0 +1,95 @@
+.restaurantList {
+  display: grid;
+  grid-row-gap: 16px;
+}
+
+@media screen and (max-width: 499px) {
+  .nav {
+    z-index: 10;
+    background-color: #fff;
+    width: 300px;
+    position: absolute;
+
+    -webkit-transform: translate(-300px, 0);
+    transform: translate(-300px, 0);
+
+    transition: transform 0.3s ease;
+  }
+
+  .open {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  .nav__item {
+    display: list-item;
+    border-bottom: 1px solid #e0e0e0;
+    width: 100%;
+    text-align: left;
+  }
+
+  .hero {
+    background-image: url('../public/images/heros/hero-image_2-small.jpg');
+  }
+}
+
+@media screen and (min-width: 350px) {
+  .resto-item__content {
+    padding: 16px 32px 32px 32px;
+  }
+  .resto-item__name {
+    font-size: 18px;
+  }
+  .resto-item__desc {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .header__menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .resto-item__content {
+    padding: 16px 32px 32px 32px;
+  }
+  .resto-item__name {
+    font-size: 18px;
+  }
+  .resto-item__desc {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .restaurantList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 16px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .nav__list {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .restaurantList {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  main {
+    max-width: 1200px;
+  }
+  .hero {
+    min-width: 1000px;
+  }
+}
